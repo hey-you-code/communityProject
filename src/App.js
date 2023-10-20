@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Dashboard from "./components/Dashboard";
+import Main from "./components/Main";
+import Profiles from "./components/Profiles";
+import SideBar from "./components/SideBar";
+import ProfilePage from "./components/ProfilePage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="h-screen w-screen flex flex-col overflow-hidden">
+        {/* Header */}
+        <div className="text-3xl my-4  pt-4 px-4 font-bold text-blue-500">
+          <h1>Gopal Krishna Satra</h1>
+        </div>
+        <div className="flex h-full w-full">
+          {/* sideBar */}
+          <SideBar />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path ="/profiles" element={<Profiles />}/>
+            <Route path="/dashboard" element={<Dashboard/>}/>
+            <Route path="/profile/:id" element={<ProfilePage />}/>
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
