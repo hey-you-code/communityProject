@@ -18,10 +18,10 @@ function App() {
           {/* sideBar */}
           <SideBar />
           <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path ="/profiles" element={<Profiles />}/>
-            <Route path="/dashboard" element={<Dashboard/>}/>
-            <Route path="/profile/:id" element={<ProfilePage />}/>
+            <Route path="/communityProject" element={<Main />} />
+            <Route path ="/communityProject/profiles" element={<Profiles />}/>
+            <Route path="/communityProject/dashboard" element={<Dashboard/>}/>
+            <Route path="/communityProject/profile/:id" element={<ProfilePage />}/>
           </Routes>
         </div>
       </div>

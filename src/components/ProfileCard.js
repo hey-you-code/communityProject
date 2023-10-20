@@ -18,7 +18,7 @@ function ProfileCard({ name, id, houseId }) {
         </div>
       </div>
       <div className="flex justify-center text-center">
-        <Link to={`/profile/${id}`}>
+        <Link to={`/communityProject/profile/${id}`}>
           <button className="rounded-full bg-[#1E1E1E] justify-center items-center  flex text-white px-4 py-2 mt-2 hover:opacity-90">
             View Profile
           </button>

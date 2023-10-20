@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const items = [
-  { title: "Invoice", link: "/" },
+  { title: "Invoice", link: "/communityProject" },
   {
     title: "Dashboard",
-    link: "/dashboard",
+    link: "/communityProject/dashboard",
   },
-  { title: "Profiles", link: "/profiles" },
+  { title: "Profiles", link: "/communityProject/profiles" },
 ];
 
 function SideBar() {

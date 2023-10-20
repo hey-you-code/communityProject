@@ -124,7 +124,7 @@ function Form({
           </div>
         </div>
 
-        <Link to="/"
+        <Link to="/communityProject"
           onClick={() => {
             dispatch(setFormData(items));
             dispatch(
